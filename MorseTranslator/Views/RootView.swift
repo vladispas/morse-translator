@@ -16,7 +16,7 @@ struct RootView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
-            DSButton(title: "Translate") {
+            DSButton(title: "Translate", titleColor: .white, backgroundColor: .black) {
                 print("Translate")
             }
         }
