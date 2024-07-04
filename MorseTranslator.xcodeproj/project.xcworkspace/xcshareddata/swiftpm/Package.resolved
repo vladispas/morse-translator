@@ -1,0 +1,15 @@
+{
+  "originHash" : "262bdcaddd0fe8544c6fc81f6eaf329c7121aab24b785c0c97bd186e5e349b5e",
+  "pins" : [
+    {
+      "identity" : "design-system",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vladispas/design-system",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dd32f26a216b9c0afd54cdb9497f7d310df46e71"
+      }
+    }
+  ],
+  "version" : 3
+}

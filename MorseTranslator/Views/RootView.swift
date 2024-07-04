@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DesignSystemPackage
 
 struct RootView: View {
     
@@ -15,6 +16,9 @@ struct RootView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            DSButton(title: "Translate") {
+                print("Translate")
+            }
         }
         .padding()
     }

@@ -11,6 +11,7 @@
 		80AE87142C357D2700EA303D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AE87132C357D2700EA303D /* RootView.swift */; };
 		80AE87162C357D2800EA303D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80AE87152C357D2800EA303D /* Assets.xcassets */; };
 		80AE87192C357D2800EA303D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80AE87182C357D2800EA303D /* Preview Assets.xcassets */; };
+		80E0F9C12C371CB500865FC5 /* DesignSystemPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 80E0F9C02C371CB500865FC5 /* DesignSystemPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E0F9C12C371CB500865FC5 /* DesignSystemPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = MorseTranslator;
+			packageProductDependencies = (
+				80E0F9C02C371CB500865FC5 /* DesignSystemPackage */,
+			);
 			productName = MorseTranslator;
 			productReference = 80AE870E2C357D2700EA303D /* MorseTranslator.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 80AE87052C357D2700EA303D;
+			packageReferences = (
+				80E0F9BF2C371CB500865FC5 /* XCRemoteSwiftPackageReference "design-system" */,
+			);
 			productRefGroup = 80AE870F2C357D2700EA303D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80E0F9BF2C371CB500865FC5 /* XCRemoteSwiftPackageReference "design-system" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vladispas/design-system";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80E0F9C02C371CB500865FC5 /* DesignSystemPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E0F9BF2C371CB500865FC5 /* XCRemoteSwiftPackageReference "design-system" */;
+			productName = DesignSystemPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 80AE87062C357D2700EA303D /* Project object */;
 }
